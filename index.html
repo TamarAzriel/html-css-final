@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMN - SIGINT OPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="icon-shield">🛡️</div>
+        <div class="title-glow">SIGINT OPS</div>
+        <div class="status-secure">
+            <span class="dot green-dot"></span> SECURE • ONLINE
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- ריבוע מרכזי -->
+        <section class="radar-panel">
+            <div class="radar">
+                <div class="sweep"></div>
+                <div class="blip" style="top: 30%; left: 60%;"></div>
+                <div class="blip" style="top: 60%; left: 30%;"></div>
+                <div class="blip" style="top: 70%; left: 75%;"></div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="number green-text">24</span>
+                    <span class="label">ACTIVE SIGNALS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number green-text">07</span>
+                    <span class="label">PRIORITY ALERTS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- שורת כפתורים -->
+        <section class="action-buttons">
+            <button>⚡ New Brief</button>
+            <button>&lt;&gt; Decode</button>
+            <button>🚁 Request Drone</button>
+        </section>
+
+        <!-- שורת כרטיסים -->
+        <section class="cards-grid">
+            <div class="card critical">
+                <div class="card-header"><span class="badge">CRITICAL</span> <span class="status">In Progress</span></div>
+                <div class="card-title">Operation Nightfall</div>
+                <div class="progress-bar"><div class="fill" style="width: 65%;"></div><span class="percent">65%</span></div>
+            </div>
+            <div class="card high">
+                <div class="card-header"><span class="badge">HIGH</span> <span class="status">Analyzing</span></div>
+                <div class="card-title">Signal Intercept Alpha</div>
+                <div class="progress-bar"><div class="fill" style="width: 40%;"></div><span class="percent">40%</span></div>
+            </div>
+            <div class="card medium">
+                <div class="card-header"><span class="badge">MEDIUM</span> <span class="status">Pending</span></div>
+                <div class="card-title">Asset Recovery</div>
+                <div class="progress-bar"><div class="fill" style="width: 15%;"></div><span class="percent">15%</span></div>
+            </div>
+            <div class="card high">
+                <div class="card-header"><span class="badge">HIGH</span> <span class="status">Active</span></div>
+                <div class="card-title">Cyber Defense Grid</div>
+                <div class="progress-bar"><div class="fill" style="width: 80%;"></div><span class="percent">80%</span></div>
+            </div>
+        </section>
+
+        <!-- שורת סטאטוס אדומה -->
+        <section class="threat-alert">
+            <span class="dot red-dot"></span>
+            THREAT DETECTED
+        </section>
+    </main>
+
+    <!-- ניווט תחתון -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <span class="icon">📈</span>
+            <span class="text">Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">📡</span>
+            <span class="text">Feed</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">📄</span>
+            <span class="text">Brief</span>
+        </a>
+    </nav>
+</body>
+</html>
