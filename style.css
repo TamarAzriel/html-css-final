@@ -162,8 +162,10 @@ body {
 }
 
 .action-buttons button:hover {
-    background-color: rgba(255,255,255,0.05);
-    border-color: rgba(255,255,255,0.3);
+    background-color: rgba(0, 255, 65, 0.08); 
+    color: var(--text-main); 
+    border-color: var(--neon-green); 
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.25); 
 }
 
 /* Cards */
