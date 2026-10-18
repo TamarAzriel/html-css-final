@@ -186,11 +186,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) rotate(5deg);
+    border-color: var(--neon-green) !important; 
+    border-left-color: var(--neon-green) !important;
+    box-shadow: 0 5px 15px rgba(0, 255, 65, 0.2);
 }
 
 .card.critical { border-left-color: var(--neon-red); }
@@ -248,6 +252,13 @@ body {
     gap: 1rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.threat-alert:hover {
+    background-color: rgba(255, 42, 85, 0.2);
+    box-shadow: 0 0 15px rgba(255, 42, 85, 0.3);
+    transform: scale(1.02);
 }
 
 /* Bottom Nav */
