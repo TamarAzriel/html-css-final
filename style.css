@@ -79,8 +79,13 @@ body {
     align-items: center;
     justify-content: space-around;
     border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease-in-out;
 }
 
+.radar-panel:hover {
+    border: 1px solid var(--neon-green);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
 .radar {
     width: 200px;
     height: 200px;
@@ -320,4 +325,19 @@ body {
     .stat-item .number {
         font-size: 4rem; 
     }
+}
+
+.logo-icon {
+    width: 26px;
+    height: 26px;
+    background-color: var(--neon-green); /* מותאם למשתנה שהגדרנו */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b0d12;
+    font-size: 0.75rem;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+    cursor: pointer;
 }
