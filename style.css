@@ -279,11 +279,13 @@ body {
     gap: 0.4rem;
     padding-bottom: 0.5rem;
     position: relative;
-    transition: color 0.3s;
+    
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-item:hover {
-    color: var(--text-main);
+    color: var(--neon-green);
+    transform: scale(1.1);
 }
 
 .nav-item.active {
@@ -353,4 +355,16 @@ body {
     font-size: 0.75rem;
     box-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.shield-img {
+    width: 22px;
+    height: 22px;
+ 
+    filter: drop-shadow(0 0 2px var(--neon-green)); 
+}
+.logo-icon:hover {
+    transform: scale(1.05) rotate(360deg); 
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
 }
